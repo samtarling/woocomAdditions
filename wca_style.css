@@ -1,5 +1,42 @@
 .woocomAdditions_product_tagline
 {
-    color: red;
+    color: black;
     font-family: "Ubuntu", Sans-serif;
+    font-size: 14px;
+}
+
+.woocommerce-loop-product__title
+{
+    font-weight: bold !important;
+}
+
+.woocomAdditions_moreinfo_button
+{
+    margin-top: 0;
+    position: absolute;
+    right: 3%;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid #eeeeee;
+    font-size: 100%;
+    line-height: 1;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: visible;
+    padding: .618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    left: auto;
+    color: #FFFFFF;
+    background-color: #0F9FD6;
+    border: 0;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.woocomAdditions_moreinfo_button:hover
+{
+    color: #FFFFFF;
+    background-color: #0F9FC6;
 }

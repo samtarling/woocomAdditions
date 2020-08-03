@@ -36,7 +36,7 @@ function registerScripts()
  *
  * @return void
  */
-function getWooProductTagline()
+function wca_getProductTagline()
 {
     $productId = get_the_ID();
     
@@ -46,5 +46,14 @@ function getWooProductTagline()
         echo "<p class='woocomAdditions_product_tagline'>" . $wcProduct->get_meta( 'tagline' ) . "</p>";
 
     }
-    
 }
+add_action( 'wca_get_product_tagline', 'wca_getProductTagline' );
+
+function wca_addMoreInfoButton()
+{
+    $productId = get_the_ID();
+    $wcProduct = wc_get_product($productId);
+    $wcProductSlug = $wcProduct->get_slug();
+    echo "<a href=\"product/" . $wcProductSlug . "\" class=\"woocomAdditions_moreinfo_button\" rel=\"nofollow\">More Info</a>";
+}
+add_action( 'wca_show_moreinfo_button', 'wca_addMoreInfoButton' );
