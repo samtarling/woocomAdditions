@@ -54,6 +54,6 @@ function wca_addMoreInfoButton()
     $productId = get_the_ID();
     $wcProduct = wc_get_product($productId);
     $wcProductSlug = $wcProduct->get_slug();
-    echo "<a href=\"product/" . $wcProductSlug . "\" class=\"woocomAdditions_moreinfo_button\" rel=\"nofollow\">More Info</a>";
+    echo "<a href=\"" . $wcProductSlug . "\" class=\"woocomAdditions_moreinfo_button\" rel=\"nofollow\">More Info</a>";
 }
 add_action( 'wca_show_moreinfo_button', 'wca_addMoreInfoButton' );
