@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       woocomAdditions
- * Plugin URI:        #
+ * Plugin URI:        https://github.com/samtarling/woocomAdditions
  * Description:       Some interesting modifications to WooCommerce ;-)
  * Version:           1.0.0
  * Requires at least: 5.2
@@ -44,6 +44,7 @@ function getWooProductTagline()
     {
         $wcProduct = wc_get_product($productId);
         echo "<p class='woocomAdditions_product_tagline'>" . $wcProduct->get_meta( 'tagline' ) . "</p>";
-	}
+
+    }
     
 }
